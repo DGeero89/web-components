@@ -67,7 +67,7 @@ h2 {
     transition: all .5s linear;
 }
 
-#main-nav li:hover{
+#main-nav li:hover {
     background: #DAF5E0;
 }
 
@@ -141,6 +141,7 @@ h2 {
 	background: #fff;
 	min-height: 100vh;
 }
+
 #content{
 	padding-top: 10%;
 }
@@ -189,8 +190,7 @@ h2 {
 }
 
 .component-container:hover .component-view {
-	opacity: 1
-}
+	opacity: 1;}
 
 .component-view a {
 	display: block;
