@@ -17,7 +17,7 @@ a {
 
 .button {
 	font: inherit;
-	font-weight: normal;
+	font-weight: bold;
 	text-transform: uppercase;
 	display: inline-block;
 	cursor: pointer;
@@ -25,8 +25,9 @@ a {
   	margin: .5em .2em .5em 0;
   	line-height: 1.618em;
   	font-size: .8em;
-  	background: transparent;
+  	background: #fff;
   	color: #333;
+  	margin: 0 0 5px;
   	box-shadow: 0 -2px 0 rgba(0,0,0,0.2) inset;
   	border: 1px solid transparent;
   	border-color: #ccc;
@@ -39,9 +40,11 @@ a {
 
 .button:hover,
 .button:active{
-	background: rgba(0,0,0,.2);
-	color: #fff;
-	box-shadow: 1px 0px 1px rgba(0,0,0,0.2) inset;
+	background: #c1c1c1;
+	box-shadow: none;
+    -webkit-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    transform: translateY(2px);
 }
 
 .button-sm {

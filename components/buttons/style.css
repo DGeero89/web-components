@@ -157,7 +157,7 @@ h2 {
 }
 
 #main-wrap{
-	background: url(../../landscape-2.jpg) no-repeat center center fixed;
+	background: url(landscape-2.jpg) no-repeat center center fixed;
 	min-height: 100vh;
 	padding: 0 0 5%;
 }
@@ -168,6 +168,61 @@ h2 {
 	background: rgba(255,255,255,.6);
 }
 
+.component-container{
+	background: #fff;
+	width: 32%;
+	float: left;
+	margin-right: 2%;
+	border: 1px solid #DAF5E0;
+	padding: 5%;
+	text-align: center;
+	border-radius: 4px;
+	position: relative;
+	box-shadow: 2px 2px 22px #e8e8e8;;
+	-webkit-transition: all 3s linear;
+	-moz-transition: all 3s linear;
+	-ms-transition: all 3s linear;
+	-o-transition: all 3s linear;
+	transition: all 3s linear;
+}
+
+.component-container h2 {
+	color: #4C8158;
+	font-size: 1.6em;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.component-view{    
+	display: block;
+	position: absolute;
+	opacity: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(76, 129, 88, .7);
+    color: #fff;
+    font-size: 2em;
+    border-radius: 4px;
+    box-shadow: 2px 2px 22px #DAF5E0;
+    -webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+.component-container:hover .component-view {
+	opacity: 1;}
+
+.component-view a {
+	display: block;
+	padding: 15% 0 0;
+	height: 100%;
+	text-decoration: none;
+	color: #fff;
+}
 
 /********** Footer Styles **********/
 
