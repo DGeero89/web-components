@@ -18,7 +18,7 @@ a {
 .button {
 	font: inherit;
 	font-weight: normal;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	display: inline-block;
 	cursor: pointer;
 	padding: .3em 1em;
