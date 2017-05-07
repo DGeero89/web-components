@@ -1,17 +1,19 @@
-.tabComponent {
-	/*background: cyan;*/
-	/*padding: 10px;*/
-}
-
 .tc-label{
 	display: inline-block;
 	border-radius: 5px 5px 0 0;
+	font-size: 1.2em;
 	float:left;
 	padding: 10px;
 	-webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  cursor: pointer;
+	color: #4c8158;
+}
+
+.tc-label:hover {
+	background: #DAF5E0;
 }
 
 .tc-tab {
@@ -20,8 +22,6 @@
 
 .tc-tab:checked + .tc-label {
 	background: #DAF5E0;
-	color: #4C8158;
-	font-weight: bolder;
 	border-top: 1px solid #4C8158;
 	border-right: 1px solid #4C8158;
 	border-left: 1px solid #4C8158;
