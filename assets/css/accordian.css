@@ -1,0 +1,62 @@
+.accordion input[type=radio]{
+	display: none;
+}
+
+.accordion {
+	border: 1px solid #000;
+	border-radius: .8em;
+	padding: 10px;
+}
+
+.accordion .ac-label {
+	padding: 5px 10px;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: #000;
+	border: 1px solid #000;
+	background: #D85B47;
+	display: block;
+}
+
+.accordion ul {
+	list-style: none;
+}
+
+.accordion li {
+	margin-bottom: 2px;
+}
+
+.accordion .content{
+	font-size: 1.3rem;
+	height: 0;
+	padding: 0 10px;
+	overflow: hidden;
+	transition: all .3s ease-out;
+}
+
+.accordion input[type=radio]:checked ~ .ac-label {
+	background: #BF2942;
+	color: #fff;
+}
+
+.accordion input[type=radio]:checked ~ .content {
+	min-height: 200px;
+	height: 220px;
+	padding: 10px;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.accordion header {
+	color: #6D4946;
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin: 0 0 10px;
+}
+
+.accordion h3 {
+	font-size: 1.4rem;
+	font-weight: bolder;
+	margin: 10px 0 10px;
+}
