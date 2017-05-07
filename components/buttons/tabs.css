@@ -1,0 +1,50 @@
+.tabComponent {
+	/*background: cyan;*/
+	/*padding: 10px;*/
+}
+
+.tc-label{
+	display: inline-block;
+	border-radius: 5px 5px 0 0;
+	float:left;
+	padding: 10px;
+	-webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.tc-tab {
+	display: none;
+}
+
+.tc-tab:checked + .tc-label {
+	background: #DAF5E0;
+	color: #4C8158;
+	font-weight: bolder;
+	border-top: 1px solid #4C8158;
+	border-right: 1px solid #4C8158;
+	border-left: 1px solid #4C8158;
+}
+
+.tc-panel {
+	display: none;
+	opacity: 0;
+	transition: opacity .5s;
+	padding: 1em;
+}
+
+.tc-tab:nth-of-type(1):checked ~ .tc-panel:nth-of-type(1),
+.tc-tab:nth-of-type(2):checked ~ .tc-panel:nth-of-type(2),
+.tc-tab:nth-of-type(3):checked ~ .tc-panel:nth-of-type(3),
+.tc-tab:nth-of-type(4):checked ~ .tc-panel:nth-of-type(4) {
+	display: block;
+	border: 1px solid #4C8158;
+	border-radius: 5px;
+	clear: left;
+	opacity: 1;
+}
+
+.tc-tab:nth-of-type(1):checked ~ .tc-panel:nth-of-type(1) {
+	border-radius: 0 5px 5px 5px;
+}
