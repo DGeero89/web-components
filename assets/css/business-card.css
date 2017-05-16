@@ -60,7 +60,7 @@
 .c-card-label:hover .c-card {
   -webkit-transform: rotateX(5deg);
   transform: rotateX(5deg);
-  box-shadow: 0 10px 10px rgba(50,50,50,.5);
+  box-shadow: 0 10px 10px rgba(0,0,0,.5);
 }
 
 .c-card-flip {
@@ -82,7 +82,7 @@ input {
 .c-card-label:hover :checked + .c-card {
   transform: rotateX(175deg);
   -webkit-transform: rotateX(175deg);
-  box-shadow: 0 20px 20px rgba(255,255,255,.5);
+  box-shadow: 0 10px 10px rgba(30,30,30,.5);
 }
 
 .c-card-heading {
